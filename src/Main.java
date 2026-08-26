@@ -4,6 +4,29 @@ public class Main{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        ArrayList<String> materias = new ArrayList<>();//CRIAÇÃO DE ARRAY
+
+        //ADICIONANDO ELEMENTOS DE ARRAY PELO .ADD
+       materias.add("Português");
+       materias.add("Inglês");
+       materias.add("Matemática");
+       materias.add("Física");
+
+        String materia = materias.get(0);//ACESSAR ELEMENTO DE ARRAY PELO .GET
+        System.out.println(materia);
+
+        materias.set(0, "Geografia");//MODIFICAR ELEMENTO DE ARRAY PELO .SET
+
+        materias.remove(2);//REMOVENDO ELEMENTO DE ARRAY PELO .REMOVE ATRAVÉS DO ÍNDICE
+        materias.remove("Física");// REMOVENDO PELO VALOR DO OBJETO
+
+        int total = materias.size();
+        System.out.println("Total de materias: " + total);
+
+        String mat = materias.get(0);
+        System.out.println(mat);
+
+//-------------------------------------------------------- //Array de objetos abaixo
         //<ARRAY> DE OBJETOS
         Cliente[] clientes = new Cliente[3];
 
