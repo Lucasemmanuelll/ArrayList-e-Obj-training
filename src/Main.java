@@ -1,8 +1,9 @@
 import java.util.Scanner;
+import java.util.ArrayList;//IMPORTAR BIBLIOTECA ARRAYLIST
+public class Main {
 
-public class Main{
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+    public static void main(String args[]){
+        Scanner input =new Scanner(System.in);
 
         ArrayList<String> materias = new ArrayList<>();//CRIAÇÃO DE ARRAY
 
@@ -29,7 +30,6 @@ public class Main{
 //-------------------------------------------------------- //Array de objetos abaixo
         //<ARRAY> DE OBJETOS
         Cliente[] clientes = new Cliente[3];
-
         //MENU DE CLIENTES
         int opcao;
         do{ // INICIA A CONDIÇÃO PRIMEIRO
@@ -141,4 +141,5 @@ public class Main{
             }
         }while(opcao != 6);
     }
-}
+    }
+
